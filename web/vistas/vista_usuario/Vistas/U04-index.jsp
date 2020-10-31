@@ -3,11 +3,13 @@
          pageEncoding="ISO-8859-1"%>
 <%@page import="ModeloDao.U04_CuentaDao"%>
 
+
 <!DOCTYPE html>
 <html lang="es">
     <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0" >
+        <link rel="stylesheet" href="../../../css/estilo.css">
         <title>Llama Bus</title>
         <link href="https://file.myfontastic.com/t5tNwfwUapz4yDzK3B6sfe/icons.css" rel="stylesheet">
     </head>
@@ -22,6 +24,7 @@
                         <li class="menu__item"><a class="menu__link" href="U04-Servicio.jsp">servicios</a></li>
                         <li class="menu__item"><a class="menu__link" href="U04-Nosotros.jsp">Nosotros</a></li>
                         <li class="menu__item"><a class="menu__link" href="U04-AtencioAlCliente.jsp">Atencion al cliente</a></li>
+                        <li class="menu__item"><a class="menu__link" href="u01-comprarPasaje.jsp">compra de pasaje</a></li>
                             <%
 
                                 HttpSession sesion = request.getSession();

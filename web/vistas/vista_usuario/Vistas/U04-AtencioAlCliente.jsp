@@ -1,7 +1,7 @@
 <%@page import="java.io.PrintWriter"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
  pageEncoding="ISO-8859-1"%>
-<%@page import="controlador.PersonaDao"%>
+<%@page import="ModeloDao.U04_CuentaDao"%>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0" >
     <title>Llama Bus</title>
-    <link rel="stylesheet" href="../U04-Css/estilo.css">
+    <link rel="stylesheet" href="../../../css/estilo.css">
     <link href="https://file.myfontastic.com/t5tNwfwUapz4yDzK3B6sfe/icons.css" rel="stylesheet">
 </head>
 <body>
