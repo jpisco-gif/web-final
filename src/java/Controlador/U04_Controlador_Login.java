@@ -70,7 +70,7 @@ public class U04_Controlador_Login extends HttpServlet{
                     sesion.setAttribute("usuario", usuario);
                     sesion.setAttribute("contraseña", contraseña);
                     sesion.setAttribute("rol_id", "3");
-                    response.sendRedirect("../Vistas/gerente.jsp");
+                    response.sendRedirect("/web-final/vistas/vista_gerencia/index.jsp");
                     break;
                 default:
                     out.println("<script type=\"text/javascript\">");
