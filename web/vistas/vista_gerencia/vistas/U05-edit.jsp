@@ -1,6 +1,6 @@
 
-<%@page import="Modelo.Admi"%>
-<%@page import="ModeloDao.AdmiDao"%>
+<%@page import="Modelo.U05_Admi"%>
+<%@page import="ModeloDao.U05_AdmiDao"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -10,9 +10,9 @@
     </head>
     <body>
        <% 
-       AdmiDao dao=new AdmiDao();
+       U05_AdmiDao dao=new U05_AdmiDao();
        int cuenta_id=Integer.parseInt((String)request.getAttribute("cuenta_idper"));
-       Admi p=(Admi)dao.list(cuenta_id);
+       U05_Admi p=(U05_Admi)dao.list(cuenta_id);
        %>
        <h1>Modificar Cuenta de Administrador</h1>
        <form action="U05_Controlador_Admi">
