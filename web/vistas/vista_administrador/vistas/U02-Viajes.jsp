@@ -7,7 +7,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Administración</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='U02-estilos.css'>
+    <link rel='stylesheet' href='../../../css/U02-estilos.css'>
         
 </head>
 <body>
@@ -18,7 +18,7 @@
               <div class="headermain">
                 <!--Header-->
                   <header>
-                    <a href="U02-index.html" class="logo"><img src="file:///C:/Users/Benjamin/Desktop/logo2.svg" alt="" /></a>
+                      <a href="../index.jsp" class="logo"><img src="file:///C:/Users/Benjamin/Desktop/logo2.svg" alt="" /></a>
                       <!--logo-->
                   </header>
                     

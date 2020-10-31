@@ -88,7 +88,7 @@
                 <h2 class="section__titulo">!Contactanos!</h2>
                 
                 <div class="X">
-                    <form class="formx" method="POST" action="<%=request.getContextPath()%>/quejas">
+                    <form class="formx" method="POST" action="<%=request.getContextPath()%>/Quejas">
                         <p class="L">
                             <label for="nombre">nombre</label>
                           <input type="text" name="fullname" ></input></p>

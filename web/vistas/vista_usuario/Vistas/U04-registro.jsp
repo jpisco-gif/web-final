@@ -31,7 +31,7 @@
      <div class="login-header">
   <h1>Registro de usuario</h1>
   </div>
-  <form action="<%=request.getContextPath()%>/register" method="post">
+  <form action="<%=request.getContextPath()%>/Register" method="post">
        <div class="login-form">
      <label>usuario:</label>
      <input type="text" name="usuario" />

@@ -1,5 +1,5 @@
-<%@page import="Modelo.U02_Persona"%>
-<%@page import="ModeloDao.U02_PersonaDao"%>
+<%@page import="Modelo.U02_Ruta"%>
+<%@page import="ModeloDao.U02_RutasDao"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -9,7 +9,7 @@
     </head>
     <body>
         <% 
-        U02_PersonaDao end=new U02_PersonaDao();
+        U02_RutasDao end=new U02_RutasDao();
         int ruta_id=Integer.parseInt((String)request.getAttribute("idel"));
         end.eliminar(ruta_id);
         request.getRequestDispatcher("U02-Viajes2.jsp").forward(request, response);
