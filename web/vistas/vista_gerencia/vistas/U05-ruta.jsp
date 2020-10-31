@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ruta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="U05-estilos.css">
+    <link rel="stylesheet" href="../../../css/estilo.css">
     
 </head>
 <body>
