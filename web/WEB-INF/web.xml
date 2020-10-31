@@ -21,6 +21,10 @@
         <servlet-class>Controlador.U04_Controlador_Register</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>U01_Controlador</servlet-name>
+        <servlet-class>Controlador.U01_Controlador</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>U04_Controlador_Login</servlet-name>
         <servlet-class>Controlador.U04_Controlador_Login</servlet-class>
     </servlet>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>U04_Controlador_Login</servlet-name>
         <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>U01_Controlador</servlet-name>
+        <url-pattern>/Controlador</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>U04_Quejas</servlet-name>

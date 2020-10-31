@@ -15,7 +15,7 @@
         <section class="ingresar-datos">
             <h3>Ingrese sus datos</h3>
             <div class="muestra-form">
-                <form action="../../U01_Controlador">
+                <form action="<%=request.getContextPath()%>/Controlador" method="post">
                     itinerario: <%=itinerario_id%>
                     numero de asiento: <%=nom_asiento%>
                     <table class="formulario">

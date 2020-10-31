@@ -25,6 +25,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author V330
  */
+
 public class U04_Controlador_Login extends HttpServlet{
     private U04_CuentaDao loginDao;
 
@@ -62,7 +63,7 @@ public class U04_Controlador_Login extends HttpServlet{
                     sesion.setAttribute("usuario", usuario);
                     sesion.setAttribute("contraseña", contraseña);
                     sesion.setAttribute("rol_id", "2");
-                    response.sendRedirect("../Vistas/admin.jsp");
+                    response.sendRedirect("/web-final/vistas/vista_administrador/index.jsp");
                     break;
                     
                 case 3:
