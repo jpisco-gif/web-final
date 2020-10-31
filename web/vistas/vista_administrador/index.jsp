@@ -14,7 +14,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' href='../../css/estilo.css'>
     </head>
-    <body>
+    <body class="body">
 
         <!--Contenedor-->
         <div class="contenedor informe">
