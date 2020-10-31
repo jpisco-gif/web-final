@@ -1,7 +1,7 @@
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.List"%>
-<%@page import="Modelo.U02_Persona"%>
-<%@page import="ModeloDao.U02_PersonaDao"%>
+<%@page import="Modelo.U02_Ruta"%>
+<%@page import="ModeloDao.U02_RutasDao"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -24,10 +24,10 @@
                     </tr>
                 </thead>
                 <%
-                    U02_PersonaDao dao = new U02_PersonaDao();
-                    List<U02_Persona> list = dao.listar();
-                    Iterator<U02_Persona> iter = list.iterator();
-                    U02_Persona per = null;
+                    U02_RutasDao dao = new U02_RutasDao();
+                    List<U02_Ruta> list = dao.listar();
+                    Iterator<U02_Ruta> iter = list.iterator();
+                    U02_Ruta per = null;
                     while (iter.hasNext()) {
                         per = iter.next();
                 %>

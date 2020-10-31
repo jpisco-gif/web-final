@@ -1,5 +1,5 @@
-<%@page import="ModeloDao.U02_PersonaDao"%>
-<%@page import="Modelo.U02_Persona"%>
+<%@page import="ModeloDao.U02_RutasDao"%>
+<%@page import="Modelo.U02_Ruta"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -9,9 +9,9 @@
     </head>
     <body>
         <% 
-        U02_PersonaDao end=new U02_PersonaDao();
+        U02_RutasDao end=new U02_RutasDao();
         int ruta_id=Integer.parseInt((String)request.getAttribute("iden"));
-        U02_Persona en=(U02_Persona)end.list(ruta_id);
+        U02_Ruta en=(U02_Ruta)end.list(ruta_id);
         %>
         <form action="Controlador">
             <table border="2">
