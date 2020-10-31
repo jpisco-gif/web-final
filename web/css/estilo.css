@@ -3,7 +3,7 @@
     padding: 0; margin: 0;
     transition: all ease .5s;
 }
-html, body, .contenedor, .naranja-heippi{
+html, .body, .contenedor, .naranja-heippi{
   background-color: 
     rgb(243, 45, 38);
 }
