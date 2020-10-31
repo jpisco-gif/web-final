@@ -12,7 +12,7 @@
 </head>
 <body>
 
-        <!--Contenedores-->
+        <!--Contenedoress-->
           <div class="contenedor informe">
             <!--headermain-->
               <div class="headermain">
