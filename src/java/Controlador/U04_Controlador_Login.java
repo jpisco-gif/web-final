@@ -54,7 +54,7 @@ public class U04_Controlador_Login extends HttpServlet{
                     sesion.setAttribute("usuario", usuario);
                     sesion.setAttribute("contraseña", contraseña);                   
                     sesion.setAttribute("rol_id", "1");
-                    response.sendRedirect("../Vistas/U04-index.jsp");
+                    response.sendRedirect("../vistas/vista_usuario/Vistas/U04-index.jsp");
                     break;
                     
                 case 2:
