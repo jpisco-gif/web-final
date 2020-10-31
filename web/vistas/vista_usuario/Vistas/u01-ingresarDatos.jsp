@@ -98,7 +98,7 @@
                                 <input type="hidden" name="itinerario_id" value="<%=itinerario_id%>">
                                 <input type="hidden" name="nom_asiento" value="<%=nom_asiento%>">
                                 <input type="hidden" name="usuario_id" value="1">
-                                <input type="hidden" name="precio" value=", <%=precio%>"
+                                <input type="hidden" name="precio" value="<%=precio%>"
                             </td>
                         </tr>
                     </table>
