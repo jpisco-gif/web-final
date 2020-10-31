@@ -54,7 +54,7 @@ public class U04_Controlador_Login extends HttpServlet{
                     sesion.setAttribute("usuario", usuario);
                     sesion.setAttribute("contraseña", contraseña);                   
                     sesion.setAttribute("rol_id", "1");
-                    response.sendRedirect("Vistas/U04-index.jsp");
+                    response.sendRedirect("../vista_usuario/Vistas/U04-index.jsp");
                     break;
                     
                 case 2:
@@ -62,19 +62,19 @@ public class U04_Controlador_Login extends HttpServlet{
                     sesion.setAttribute("usuario", usuario);
                     sesion.setAttribute("contraseña", contraseña);
                     sesion.setAttribute("rol_id", "2");
-                    response.sendRedirect("Vistas/admin.jsp");
+                    response.sendRedirect("../vista_usuario/Vistas/admin.jsp");
                     break;
                     
                 case 3:
                     sesion.setAttribute("usuario", usuario);
                     sesion.setAttribute("contraseña", contraseña);
                     sesion.setAttribute("rol_id", "3");
-                    response.sendRedirect("Vistas/gerente.jsp");
+                    response.sendRedirect("../vista_usuario/Vistas/gerente.jsp");
                     break;
                 default:
                     out.println("<script type=\"text/javascript\">");
                     out.println("alert('Email o contraseña incorrecta');");
-                    out.println("location='Vistas/U04-login.jsp';");
+                    out.println("location='../vista_usuario/Vistas/U04-login.jsp';");
                     out.println("</script>");
                     
             }
