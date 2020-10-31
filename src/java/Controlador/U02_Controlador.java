@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "U02_Controlador", urlPatterns = {"/U02_Controlador"})
 public class U02_Controlador extends HttpServlet {
-String listar="vistas/U02-Viajes2.jsp";
+String listar="../../Web Pages/vistas/vista_administrador/vistas/U02-Viajes2";
 String add="vistas/U02-Viajes3.jsp";
 String edit="vistas/U02-Editar.jsp";
 String eliminar = "vistas/U02_eliminar.jsp";
