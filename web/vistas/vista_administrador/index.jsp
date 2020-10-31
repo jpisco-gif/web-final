@@ -41,13 +41,13 @@
                   Main
                 --><main>    
                     <section class="reporte-grafico">
-                        <iframeset>
+                        
                             
                             <h1> HOLA ADMINISTRADOR :D</h1>
                             <iframe name="cabecera" id="cabecera" src="vistas/u03_listar.jsp" width="850" height="420" frameborder="0"></iframe>
                             
                             
-                        </iframeset>
+                        
                         
                     </section>
                 </main>
