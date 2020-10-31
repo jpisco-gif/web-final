@@ -1,98 +1,101 @@
 <%@page import="java.io.PrintWriter"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
- pageEncoding="ISO-8859-1"%>
+         pageEncoding="ISO-8859-1"%>
 <%@page import="ModeloDao.U04_CuentaDao"%>
-                 
+
 <!DOCTYPE html>
 <html lang="es">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0" >
-    <title>Llama Bus</title>
-    <link href="https://file.myfontastic.com/t5tNwfwUapz4yDzK3B6sfe/icons.css" rel="stylesheet">
-</head>
-<body>
-    <header class="header">
-        <div class="contenedor">
-            <h1 class="logo">Llama bus</h1>
-            <span class="icon-menu" id="btn-menu"></span>
-            <nav class="nav" id="nav">
-                <ul class="menu">
-                    <li class="menu__item"><a class="menu__link elect" href="#">Inicio</a></li>
-                    <li class="menu__item"><a class="menu__link" href="U04-Servicio.jsp">servicios</a></li>
-                    <li class="menu__item"><a class="menu__link" href="U04-Nosotros.jsp">Nosotros</a></li>
-                    <li class="menu__item"><a class="menu__link" href="U04-AtencioAlCliente.jsp">Atencion al cliente</a></li>
-                     <% 
-                         
-                         HttpSession sesion= request.getSession();
-                         String usuario;
-                         String contraseña;
-                         if (sesion.getAttribute("usuario")!=null && sesion.getAttribute("contraseña")!=null) {
-                             usuario=sesion.getAttribute("usuario").toString();
-                             contraseña=sesion.getAttribute("contraseña").toString();
-                             out.println("<li class='menu__item'>");
-                           out.println("<a class='menu__link' href='../Vistas/u04-logout.jsp'>Logout</a>");
-                           out.println("</li>"); 
-                                                         
-                     } else {  
-                           out.println("<li class='menu__item'>");
-                           out.println("<a class='menu__link' href='../Vistas/U04-login.jsp'>Login</a>");
-                           out.println("</li>");   
-                              
-                         }
- {
-                            
-                         }
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0" >
+        <title>Llama Bus</title>
+        <link href="https://file.myfontastic.com/t5tNwfwUapz4yDzK3B6sfe/icons.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="contenedor">
+                <h1 class="logo">Llama bus</h1>
+                <span class="icon-menu" id="btn-menu"></span>
+                <nav class="nav" id="nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__link elect" href="#">Inicio</a></li>
+                        <li class="menu__item"><a class="menu__link" href="U04-Servicio.jsp">servicios</a></li>
+                        <li class="menu__item"><a class="menu__link" href="U04-Nosotros.jsp">Nosotros</a></li>
+                        <li class="menu__item"><a class="menu__link" href="U04-AtencioAlCliente.jsp">Atencion al cliente</a></li>
+                            <%
+
+                                HttpSession sesion = request.getSession();
+                                String usuario;
+                                String contraseña;
+                                if (sesion.getAttribute("usuario") != null && sesion.getAttribute("contraseña") != null) {
+                                    usuario = sesion.getAttribute("usuario").toString();
+                                    contraseña = sesion.getAttribute("contraseña").toString();
+                                    out.println("<li class='menu__item'>");
+                                    out.println("<a class='menu__link' href='../Vistas/u04-logout.jsp'>Logout</a>");
+                                    out.println("</li>");
+
+                                } else {
+                                    out.println("<li class='menu__item'>");
+                                    out.println("<a class='menu__link' href='../Vistas/U04-login.jsp'>Login</a>");
+                                    out.println("</li>");
+
+                                }
+                                {
+
+                                }
                             %> 
-                    
-                  
-                </ul>
-            </nav>
+
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="banner">
+            <ul>
+                <li><img src="../U04-img/arequipa.jpg" alt="" class="banner__img"></li>
+                <li><img src="../U04-img/Ancash.jpg" alt="" class="banner__img"></li>
+                <li><img src="../U04-img/ica.jpg" alt="" class="banner__img"></li>
+                <li><img src="../U04-img/cuzco.jpg" alt="" class="banner__img"></li>
+                <li><img src="../U04-img/huancayo.jpg" alt="" class="banner__img"></li>
+            </ul>
+
+            <div class="contenedor">
+                <h2 class="banner__titulo">La mejor seguridad de buses del Peru</h2>
+                <p class="banner__txt">Bioseguridad y protocolo</p>
+                <form action="" method="post">
+                    <label> Origen: </label>   
+                    <select name="origen">
+                        <option value="">Seleccione</option>
+                        <option value="1">Lima</option> 
+                        <option value="2">Ucayali</option> 
+                        <option value="3">Huancayo</option>
+                        <option value="10">Junin</option> 
+                        <option value="11">Ica</option> 
+                        <option value="12">Cuzco</option> 
+                        </p>
+                    </select> 
+                    <label> Destino: </label>
+                    <select name="destino">
+                        <option value="">Seleccione</option>
+                        <option value="1">Lima</option> 
+                        <option value="2">Ucayali</option> 
+                        <option value="3">Huancayo</option>
+                        <option value="10">Junin</option> 
+                        <option value="11">Ica</option> 
+                        <option value="12">Cuzco</option> 
+                        </p>
+                    </select> 
+                    <label> fecha: </label>
+                    <input class="xd"type="date" name="fecha" value="2020-10-30" />
+                    <input type="hidden" name="accion" value="consultar-rutas"
+                    <input type="submit" value="Buscar"/>
+
+
+                </form>
+            </div>   
         </div>
-    </header>
-    <div class="banner">
-        <ul>
-            <li><img src="../U04-img/arequipa.jpg" alt="" class="banner__img"></li>
-            <li><img src="../U04-img/Ancash.jpg" alt="" class="banner__img"></li>
-            <li><img src="../U04-img/ica.jpg" alt="" class="banner__img"></li>
-            <li><img src="../U04-img/cuzco.jpg" alt="" class="banner__img"></li>
-            <li><img src="../U04-img/huancayo.jpg" alt="" class="banner__img"></li>
-        </ul>
-        
-        <div class="contenedor">
-            <h2 class="banner__titulo">La mejor seguridad de buses del Peru</h2>
-            <p class="banner__txt">Bioseguridad y protocolo</p>
-            <form action="" method="post">
-            <label> Origen: </label>   
-        <select name="OS">
-                 <option value="1">Lima</option> 
-                 <option value="2">Ucayali</option> 
-                 <option value="3">Huancayo</option>
-                 <option value="10">Junin</option> 
-                 <option value="11">Ica</option> 
-                 <option value="12">Cuzco</option> 
-                 </p>
-        </select> 
-            <label> Destino: </label>
-            <select name="OS">
-                 <option value="1">Lima</option> 
-                 <option value="2">Ucayali</option> 
-                 <option value="3">Huancayo</option>
-                 <option value="10">Junin</option> 
-                 <option value="11">Ica</option> 
-                 <option value="12">Cuzco</option> 
-                 </p>
-        </select> 
-            <label> fecha: </label>
-                <input class="xd"type="date" name="calendar" value="2020-10-30" />
-                <input type="submit" value="busqueda"/>
-            
-            
-            </form>
-        </div>   
-        </div>
- 
-        
+
+
     </div>  
     <main class="main">
         <div class="contenedor">

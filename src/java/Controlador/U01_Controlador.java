@@ -100,5 +100,13 @@ public class U01_Controlador extends HttpServlet {
             pasajeroDao.guardar(pasajero);
             acceso = guardar_pasajero;
         }
+        
+        if(accion.equalsIgnoreCase("consultar-rutas")){
+            String origen = request.getParameter("origen");
+            String destino = request.getParameter("destino");
+            String fecha = request.getParameter("fecha");
+            
+            
+        }
     }
 }

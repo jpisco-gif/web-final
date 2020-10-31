@@ -12,7 +12,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="../../../css/u01-compraPasajes.css">
+        <link rel="stylesheet" href="../../../css/estilo.css">
         <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
 
         <title>Comprar pasaje</title>
