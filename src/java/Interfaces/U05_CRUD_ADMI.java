@@ -6,17 +6,17 @@
 package Interfaces;
 
 import java.util.List;
-import Modelo.U05_Admin;
+import Modelo.U05_Admi;
 /**
  *
  * @author V330
  */
-public interface U05_CRUD_ADMIN {
+public interface U05_CRUD_ADMI {
    public List listar();
-   public U05_Admin list(int cuenta_id);
-   public boolean add(U05_Admin per);
-   public boolean add2(U05_Admin per);
-   public boolean edit(U05_Admin per);
-   public boolean edit2(U05_Admin per);
+   public U05_Admi list(int cuenta_id);
+   public boolean add(U05_Admi per);
+   public boolean add2(U05_Admi per);
+   public boolean edit(U05_Admi per);
+   public boolean edit2(U05_Admi per);
    public boolean eliminar(int cuenta_id); 
 }

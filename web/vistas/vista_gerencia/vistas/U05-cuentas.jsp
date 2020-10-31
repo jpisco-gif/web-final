@@ -12,7 +12,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Cuentas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="U05-estilos.css">
+  <link rel="stylesheet" href="../../../css/U05-estilos.css">
 </head>
 <body>
       
@@ -57,7 +57,8 @@
                             <div class="finanzas_parrafo">
                                 
                               
-                              <p><a href="../U05_Controlador_Admi?accion=listar" target="iframe_a">Listar Administradores</a></p>  
+                              <p><a href="../U05_Controlador?accion=listar" target="iframe_a">Listar Administradores</a></p>  
+                              <p><a href="../../../U05_Controlador?accion=listar" target="iframe_a">Listar Administradores</a></p>
                   
                               <iframe src="U05-blanco.jsp" name="iframe_a" height="400px" width="1200px" title="Iframe Example"></iframe>
                   

@@ -1,14 +1,14 @@
 
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.List"%>
-<%@page import="Modelo.Admi"%>
-<%@page import="ModeloDao.AdmiDao"%>
+<%@page import="Modelo.U05_Admi"%>
+<%@page import="ModeloDao.U05_AdmiDao"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="../U05-Gerencia/U05-estilos.css">
+       
         <title>Listado General</title>
     </head>
     <body>
@@ -39,10 +39,10 @@
                     
                 </thead>
                 <%
-                AdmiDao dao=new AdmiDao();
-                List<Admi> list=dao.listar();
-                Iterator<Admi> iter=list.iterator();
-                Admi per=null;
+                U05_AdmiDao dao=new U05_AdmiDao();
+                List<U05_Admi> list=dao.listar();
+                Iterator<U05_Admi> iter=list.iterator();
+                U05_Admi per=null;
                 while(iter.hasNext())
                     {
                     per=iter.next();

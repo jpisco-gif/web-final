@@ -12,7 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import Modelo.U05_Admin;
+import Modelo.U05_Admi;
 import ModeloDao.U05_AdmiDao;
 import javax.servlet.RequestDispatcher;
 
@@ -22,12 +22,12 @@ import javax.servlet.RequestDispatcher;
  */
 @WebServlet(name = "U05_Controlador", urlPatterns = {"/U05_Controlador"})
 public class U05_Controlador extends HttpServlet {
-String listar="vistas/U05-listar.jsp";
-    String add="vistas/U05-add.jsp";
-    String add2="vistas/U05-add2.jsp";
-    String edit="vistas/U05-edit.jsp";
-    String edit2="vistas/U05-edit2.jsp";
-    U05_Admin p=new U05_Admin();
+String listar="../../vistas/vista_gerencia/vistas/U05-listar.jsp";
+    String add="vistas/vista_gerencia/vistas/U05-add.jsp";
+    String add2="vistas/vista_gerencia/vistas/U05-add2.jsp";
+    String edit="vistas/vista_gerencia/vistas/U05-edit.jsp";
+    String edit2="vistas/vista_gerencia/vistas/U05-edit2.jsp";
+    U05_Admi p=new U05_Admi();
     U05_AdmiDao dao=new U05_AdmiDao();
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>

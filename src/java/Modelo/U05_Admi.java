@@ -9,7 +9,7 @@ package Modelo;
  *
  * @author V330
  */
-public class U05_Admin {
+public class U05_Admi {
     int cuenta_id;
     int rol_id;
     String usuario;
@@ -26,11 +26,11 @@ public class U05_Admin {
     int documento_id;
     String cod_documento;
     
-    public U05_Admin(){
+    public U05_Admi(){
     
     }
 
-    public U05_Admin(String usuario, String contraseña, String email, String nombres, String apellido_paterno, String apellido_materno, String sexo, String telefono, int edad, String cod_documento) {
+    public U05_Admi(String usuario, String contraseña, String email, String nombres, String apellido_paterno, String apellido_materno, String sexo, String telefono, int edad, String cod_documento) {
         this.usuario = usuario;
         this.contraseña = contraseña;
         this.email = email;

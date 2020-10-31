@@ -12,7 +12,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Index-Gerencia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="U05-estilos.css">
+  <link rel="stylesheet" href="">
 </head>
 <body>
       
@@ -22,7 +22,7 @@
               <div class="headermain">
                 <!--Header-->
                   <header>
-                    <a href="index.html" class="logo"><img src="U02.png" alt="" /></a>
+                      <a href="index.html" class="logo"><img src="../imagenes/U02.png" alt="" /></a>
                       <!--logo-->
                   </header>
   
@@ -51,7 +51,7 @@
                         </div>
 
                         <div class="bienvenida3">
-                            <div class="bienvenida_imagen"><img src="imagenes/personal.svg" alt="Personal"></div>
+                            <div class="bienvenida_imagen"><img src="../imagenes/personal.svg" alt="Personal"></div>
                           <div class="bienvenida_texto">
                             <div class="bienvenida_titulo"><h3>Cuentas</h3><hr></div>
                             <div class="bienvenida_parrafo"><br><br><p>En ese apartado podras ver y crear cuentas de administradores</p></div>
@@ -63,7 +63,7 @@
                         <br>
 
                         <div class="bienvenida">
-                            <div class="bienvenida_imagen"><img src="imagenes/ruta.png" alt="Llama"></div>
+                            <div class="bienvenida_imagen"><img src="../imagenes/ruta.png" alt="Llama"></div>
                           <div class="bienvenida_texto">
                             <div class="bienvenida_titulo"><h3>Rutas</h3><hr></div>
                             <div class="bienvenida_parrafo"><br><br><p>En ese apartado podras ver y crear rutas</p></div>
@@ -77,7 +77,7 @@
                         
 
                         <div class="bienvenida2">
-                            <div class="bienvenida_imagen"><img src="imagenes/finanzas.png" alt="finanzas"></div>
+                            <div class="bienvenida_imagen"><img src="../imagenes/finanzas.png" alt="finanzas"></div>
                           <div class="bienvenida_texto">
                             <div class="bienvenida_titulo"><h3>Finanzas</h3><hr></div>
                             <div class="bienvenida_parrafo"><br><br><p>En ese apartado podras ver los estados financieros , las ventas , las ganancias y perdidas</p></div>

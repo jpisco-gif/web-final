@@ -13,7 +13,8 @@
     </head>
     <body>
         <div>
-            <a href="U05_Controlador_Admi?accion=listar">Listar Administradores</a>     
+            <a href="../../U05_Controlador?accion=listar">Listar Administradores</a>
+            <a href="../../vistas/vista_gerencia/vistas/U05-listar.jsp">Listar Administradores</a> 
         </div>
     </body>
 </html>
