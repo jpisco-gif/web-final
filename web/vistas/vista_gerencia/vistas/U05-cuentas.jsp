@@ -57,7 +57,7 @@
                             <div class="finanzas_parrafo">
                                 
                               
-                              <p><a href="../U05_Controlador?accion=listar" target="iframe_a">Listar Administradores</a></p>  
+                              
                               <p><a href="../../../U05_Controlador?accion=listar" target="iframe_a">Listar Administradores</a></p>
                   
                               <iframe src="U05-blanco.jsp" name="iframe_a" height="400px" width="1200px" title="Iframe Example"></iframe>

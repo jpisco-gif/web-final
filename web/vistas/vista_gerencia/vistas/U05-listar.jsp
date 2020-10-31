@@ -65,7 +65,7 @@
                         <td><%=per.getDocumento_id() %></td>
                         <td><%=per.getCod_documento() %></td>
                         <td>
-                            <a href="U05_Controlador_Admi?accion=editar&cuenta_id=<%=per.getCuenta_id()%>">Editar Cuenta</a>
+                            <a href="../../../U05_Controlador_Admi?accion=editar&cuenta_id=<%=per.getCuenta_id()%>">Editar Cuenta</a>
                             <a href="U05_Controlador_Admi?accion=editar2&cuenta_id=<%=per.getCuenta_id()%>">Editar Informacion personal</a>
                             <a>Remove</a>
                             
