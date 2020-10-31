@@ -12,7 +12,7 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Administración</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' href='../../css/u03_estilos.css'>
+        <link rel='stylesheet' href='../../css/estilo.css'>
     </head>
     <body>
 
