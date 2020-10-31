@@ -5,9 +5,9 @@
 --%>
 
 <%@page import="java.util.Iterator"%>
-<%@page import="modelo.U03_Usuario"%>
+<%@page import="Modelo.U03_Usuario"%>
 <%@page import="java.util.List"%>
-<%@page import="modeloDao.U03_UsuarioDAO"%>
+<%@page import="ModeloDao.U03_UsuarioDao"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -32,7 +32,7 @@
                     </thead>
                     <%
 
-                        U03_UsuarioDAO dao = new U03_UsuarioDAO();
+                        U03_UsuarioDao dao = new U03_UsuarioDao();
                         List<U03_Usuario> list = dao.listar();
                         Iterator<U03_Usuario> iter = list.iterator();
                         U03_Usuario per = null;

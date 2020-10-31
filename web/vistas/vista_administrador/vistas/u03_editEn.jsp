@@ -4,8 +4,8 @@
     Author     : V330
 --%>
 
-<%@page import="modeloDao.U03_EncomiendaDao"%>
-<%@page import="modelo.U03_Encomienda"%>
+<%@page import="ModeloDao.U03_EncomiendaDao"%>
+<%@page import="Modelo.U03_Encomienda"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -19,7 +19,7 @@
         int id=Integer.parseInt((String)request.getAttribute("iden"));
         U03_Encomienda en=(U03_Encomienda)end.list(id);
         %>
-         <form action="Controlador">
+         <form action="U03_Controlador">
                 <table border="1">
                     <tbody>
                         <tbody>
@@ -54,7 +54,7 @@
                         </tr>
                     </tbody>                        
                 </table>
-                            <a href="Controlador?accion=listarEn">Regresar</a>
+                            <a href="U03_Controlador?accion=listarEn">Regresar</a>
             </form> 
     </body>
 </html>

@@ -5,6 +5,8 @@
  */
 package Controlador;
 
+import Modelo.U03_Encomienda;
+import ModeloDao.U03_EncomiendaDao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -12,18 +14,16 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import Modelo.U03_Encomienda;
-import ModeloDao.U03_EncomiendaDao;
 
 /**
  *
  * @author V330
  */
 public class U03_Controlador extends HttpServlet {
-String listarEn="vistas/Administrador/vistas/u03_listarEn.jsp";
-   String listar="vistas/Administrador/vistas/u03_listar.jsp";
+String listarEn="vistas/u03_listarEn.jsp";
+   String listar="vistas/vista_administrador/vistas/u03_listar.jsp";
    String addEn="vistas/Administrador/vistas/u03_addEn.jsp";
-   String edit="vistas/Administrador/vistas/u03_editEn.jsp";
+   String edit="vistas/vista_administrador/vistas/u03_editEn.jsp";
    String deleteEn="vistas/Administrador/vistas/u03_deleteEn.jsp";
     U03_Encomienda en=new U03_Encomienda();
     U03_EncomiendaDao end=new U03_EncomiendaDao();
@@ -65,7 +65,7 @@ String listarEn="vistas/Administrador/vistas/u03_listarEn.jsp";
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);String acceso="";
+        String acceso="";
         String action=request.getParameter("accion");
         if (action.equalsIgnoreCase("listar")) {
             acceso=listar;

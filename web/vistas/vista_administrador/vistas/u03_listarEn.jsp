@@ -5,9 +5,9 @@
 --%>
 
 <%@page import="java.util.Iterator"%>
-<%@page import="modelo.U03_Encomienda"%>
+<%@page import="Modelo.U03_Encomienda"%>
 <%@page import="java.util.List"%>
-<%@page import="modeloDao.U03_EncomiendaDao"%>
+<%@page import="ModeloDao.U03_EncomiendaDao"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -20,7 +20,7 @@
         <div>
 
             <h1>Encomiendas</h1>
-            <h1><a href="Controlador?accion=addEn">Agregar nueva encomienda</a></h1>
+            <h1><a href="U03_Controlador?accion=addEn">Agregar nueva encomienda</a></h1>
             <table border="1" class="user">
                 <thead>
                     <tr>                            
@@ -55,8 +55,8 @@
                         <td><%=en.getRecoge_ape()%></td>
                         <td><%=en.getRecoge_dni()%></td>
                         <td><%=en.getLugar_recojo()%></td>
-                        <td><a href="Controlador?accion=editar&id=<%=en.getId()%> " >editar</a> </td>
-                        <td><a href="Controlador?accion=eliminar&id=<%=en.getId()%>" onclick="return mensaje();" >Eliminar</a> </td>                            
+                        <td><a href="U03_Controlador?accion=editar&id=<%=en.getId()%> " >editar</a> </td>
+                        <td><a href="U03_Controlador?accion=eliminar&id=<%=en.getId()%>" onclick="return mensaje();" >Eliminar</a> </td>                            
                     </tr>
                     <% }%>
 

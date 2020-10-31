@@ -4,8 +4,8 @@
     Author     : V330
 --%>
 
-<%@page import="modelo.U03_Encomienda"%>
-<%@page import="modeloDao.U03_EncomiendaDao"%>
+<%@page import="Modelo.U03_Encomienda"%>
+<%@page import="ModeloDao.U03_EncomiendaDao"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

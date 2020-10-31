@@ -32,9 +32,9 @@
                         <li class="reporte">
                             <h4>Reportes</h4>
                         </li>
-                        <li class="usuarios"><a href="Controlador?accion=listar" onclick="" target="cabecera" >Usuarios</a></li>
+                        <li class="usuarios"><a href="../../../U03_Controlador?accion=listar" onclick="" target="cabecera" >Usuarios</a></li>
                         <li class="viajes "><a href="user02-viajes.html">Viajes</a></li>
-                        <li class="encomiendas"><a href="Controlador?accion=listarEn" target="cabecera">Encomiendas</a></li>
+                        <li class="encomiendas"><a href="../../../U03_Controlador?accion=listarEn" target="cabecera">Encomiendas</a></li>
                         <li class="reporte detallado"><a href="user02-perfil.html">Perfil</a></li>
                     </ul>
                 </nav><!--  
@@ -44,7 +44,7 @@
                         <iframeset>
                             
                             <h1> HOLA ADMINISTRADOR :D</h1>
-                            <iframe name="cabecera" id="cabecera" src="" width="850" height="420" frameborder="0"></iframe>
+                            <iframe name="cabecera" id="cabecera" src="vistas/u03_listar.jsp" width="850" height="420" frameborder="0"></iframe>
                             
                             
                         </iframeset>
