@@ -23,7 +23,7 @@ public class U04_CuentaDao extends U04_Cuenta{
         Class.forName("com.mysql.jdbc.Driver");
         
         try (Connection connection = DriverManager
-            .getConnection("jdbc:mysql://localhost:3306/llamabus?zeroDateTimeBehavior=convertToNull&useSSL=false&useTimezone=true&serverTimezone=UTC", "root", "Peruano2020");
+            .getConnection("jdbc:mysql://localhost:3306/llamabus?zeroDateTimeBehavior=convertToNull&useSSL=false&useTimezone=true&serverTimezone=UTC", "root", "");
 
             // Step 2:Create a statement using connection object
             PreparedStatement preparedStatement = connection
