@@ -12,6 +12,7 @@ public class Conexion {
          con=(Connection) DriverManager.getConnection(url, "root", "");
          
      } catch (Exception e) {
+         
          System.err.println("Error:"+e);
      }
  }
