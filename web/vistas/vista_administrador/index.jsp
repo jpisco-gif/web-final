@@ -36,6 +36,28 @@
                         <li class="viajes "><a href="user02-viajes.html">Viajes</a></li>
                         <li class="encomiendas"><a href="../../../U03_Controlador?accion=listarEn" target="cabecera">Encomiendas</a></li>
                         <li class="reporte detallado"><a href="user02-perfil.html">Perfil</a></li>
+                              <%
+
+                                HttpSession sesion = request.getSession();
+                                String usuario;
+                                String contraseña;
+                                if (sesion.getAttribute("usuario") != null && sesion.getAttribute("contraseña") != null) {
+                                    usuario = sesion.getAttribute("usuario").toString();
+                                    contraseña = sesion.getAttribute("contraseña").toString();
+                                    out.println("<li class='menu__item'>");
+                                    out.println("<a class='menu__link' href='/web-final/vistas/vista_usuario/Vistas/u04-logout.jsp'>Logout</a>");
+                                    out.println("</li>");
+
+                                } else {
+                                    out.println("<li class='menu__item'>");
+                                    out.println("<a class='menu__link' href='../Vistas/U04-login.jsp'>Login</a>");
+                                    out.println("</li>");
+
+                                }
+                                {
+
+                                }
+                            %> 
                     </ul>
                 </nav><!--  
                   Main

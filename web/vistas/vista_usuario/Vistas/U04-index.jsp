@@ -164,6 +164,6 @@
         </div>
         <p class="copy">&copy; LLama bus 2020 - Todos los derechos reservados</p>
     </footer>
-    <script src="js/menu.js"></script>
+    <script src="../../../js/menu.js"></script>
 </body>
 </html>

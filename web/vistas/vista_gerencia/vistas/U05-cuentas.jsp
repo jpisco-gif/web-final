@@ -12,7 +12,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Cuentas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../../css/U05-estilos.css">
+  <link rel="stylesheet" href="../../../css/estilo.css">
 </head>
 <body>
       
@@ -37,7 +37,28 @@
                         <li class="Reuniones"><a href="U05-ruta.jsp">Rutas</a></li>
                         <li class="Finanzas"><a href="U05-finanzas.jsp">Finanzas</a></li>
                         <li class="Personal"><a href="#">Perfil</a></li>
-                        <li class="Personal"><a href="#">Cerrar sesion</a></li>
+                        <%
+
+                                HttpSession sesion = request.getSession();
+                                String usuario;
+                                String contraseña;
+                                if (sesion.getAttribute("usuario") != null && sesion.getAttribute("contraseña") != null) {
+                                    usuario = sesion.getAttribute("usuario").toString();
+                                    contraseña = sesion.getAttribute("contraseña").toString();
+                                    out.println("<li class='menu__item'>");
+                                    out.println("<a class='menu__link' href='/web-final/vistas/vista_usuario/Vistas/u04-logout.jsp'>Logout</a>");
+                                    out.println("</li>");
+
+                                } else {
+                                    out.println("<li class='menu__item'>");
+                                    out.println("<a class='menu__link' href='../Vistas/U04-login.jsp'>Login</a>");
+                                    out.println("</li>");
+
+                                }
+                                {
+
+                                }
+                            %> 
                       </ul>
                     </nav><!--  
                       Main
